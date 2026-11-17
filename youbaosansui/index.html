@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>悠宝三岁双人-双人三岁宝宝养育实录</title>
+<meta name="description" content="悠宝三岁双人记录两个三岁孩子同住同玩的日常：分餐、争抢玩具、双人午睡、语言进度差异与家长分工，附31条实拍记录、8个高频冲突处理流程与家长评论。">
+<meta name="keywords" content="悠宝三岁双人">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f5c04a'/%3E%3Ccircle cx='24' cy='28' r='9' fill='%23fff'/%3E%3Ccircle cx='44' cy='28' r='9' fill='%23fff'/%3E%3Ccircle cx='24' cy='28' r='3.5' fill='%23444'/%3E%3Ccircle cx='44' cy='28' r='3.5' fill='%23444'/%3E%3Cpath d='M22 44q10 8 20 0' stroke='%23444' stroke-width='3.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"悠宝三岁双人","inLanguage":"zh-CN","description":"两个三岁孩子同住同玩的养育记录与冲突处理流程","dateModified":"2026-11-08"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"两个三岁孩子总抢同一辆滑步车怎么办？","acceptedAnswer":{"@type":"Answer","text":"把抢车拆成排队和交换两件事。用厨房计时器设3分钟，响铃换人；同时准备一辆备用滑步车放在阳台。10月28日到11月5日的记录里，计时器上线后单次争抢平均时长从6分钟降到80秒。"}},
+{"@type":"Question","name":"三岁双人午睡时间不同步怎么排？","acceptedAnswer":{"@type":"Answer","text":"先固定起床时间，再把午睡窗口压到12:50—14:00。11月2日起把户外活动提前到上午10点，两名孩子入睡时间差从47分钟缩到12分钟。"}},
+{"@type":"Question","name":"两个三岁孩子语言进度差半年正常吗？","acceptedAnswer":{"@type":"Answer","text":"三岁阶段词汇量个体差异可达300到1000词。11月4日测词，大宝能说出约760词，小宝约420词；判断标准看是否在进步而不是看两人是否齐平。"}},
+{"@type":"Question","name":"双人分餐需要注意哪些量？","acceptedAnswer":{"@type":"Answer","text":"三岁儿童每餐主食约50到75克熟重，蛋白质约30到40克。两名孩子用同款餐盘、不同颜色餐垫，10月30日记录显示分餐后每餐剩饭从约40%降到15%。"}},
+{"@type":"Question","name":"家长两人轮流带双人怎么分工？","acceptedAnswer":{"@type":"Answer","text":"按任务分而不是按时间平分：一人负责早晨送托和晚饭，另一人负责洗澡与睡前绘本。11月6日一周表显示，明确任务后家长单日抱娃时长下降约半小时。"}},
+{"@type":"Question","name":"两个三岁孩子共用玩具如何消毒？","acceptedAnswer":{"@type":"Answer","text":"塑料玩具每周用含氯消毒液按说明稀释擦拭后清水再擦一遍，毛绒玩具60摄氏度水洗。11月1日清点玩具共87件，其中可水洗64件。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#2b2a28;
+  --ink-soft:#5c5850;
+  --paper:#fdfaf3;
+  --card:#ffffff;
+  --line:#e7dfcd;
+  --main:#e08a2c;
+  --main-deep:#b96a15;
+  --accent:#3d7a6a;
+  --accent-soft:#e6f1ed;
+  --sun:#f5c04a;
+  --warn:#c0553d;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(70,55,20,.07);
+  --shadow-lift:0 6px 20px rgba(70,55,20,.11);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --sp:clamp(14px,2.4vw,24px);
+  --head-h:60px;
+  --notice-h:38px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);
+  background:var(--paper);line-height:1.75;font-size:16px;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--main-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 1em;padding-left:1.25em}
+section{scroll-margin-top:calc(var(--head-h) + var(--notice-h) + 14px)}
+:focus-visible{outline:3px solid var(--main);outline-offset:2px;border-radius:4px}
+
+/* 公告条 + 页头 */
+.top-wrap{position:sticky;top:0;z-index:60}
+.notice{
+  height:var(--notice-h);display:flex;align-items:center;gap:10px;
+  background:var(--ink);color:#f6eeda;font-size:13px;
+  padding:0 var(--sp);overflow:hidden;white-space:nowrap;
+}
+.notice .tag{
+  background:var(--sun);color:#3a2c08;font-weight:700;border-radius:999px;
+  padding:1px 9px;font-size:12px;flex:none;
+}
+.notice .nt-track{overflow:hidden;text-overflow:ellipsis;flex:1}
+.notice a{color:var(--sun);flex:none}
+.notice a:hover{text-decoration:underline}
+header.site-head{
+  height:var(--head-h);background:rgba(253,250,243,.96);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:14px;padding:0 var(--sp);
+}
+.brand{display:flex;align-items:center;gap:9px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand-name{font-weight:800;font-size:18px;letter-spacing:.5px;color:var(--ink)}
+.brand-name em{font-style:normal;color:var(--main-deep)}
+nav.main-nav{margin-left:auto;display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+nav.main-nav a{
+  color:var(--ink-soft);font-size:14px;padding:7px 9px;border-radius:999px;
+  transition:background .18s,color .18s;
+}
+nav.main-nav a:hover{background:#f0e7d4;text-decoration:none;color:var(--ink)}
+nav.main-nav a.on{color:var(--main-deep);font-weight:700;background:#fbeed6}
+.head-tools{display:flex;align-items:center;gap:8px;flex:none}
+.search-box{display:flex;align-items:center;background:#f2ebdc;border-radius:999px;padding:3px 4px 3px 12px}
+.search-box input{
+  border:0;background:transparent;font:inherit;font-size:14px;width:120px;color:var(--ink);
+  padding:5px 0;
+}
+.search-box input:focus{outline:none}
+.search-box button{
+  border:0;background:var(--main);color:#fff;border-radius:999px;font:inherit;
+  font-size:13px;padding:6px 12px;cursor:pointer;
+}
+.search-box button:hover{background:var(--main-deep)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:10px;
+  width:40px;height:38px;align-items:center;justify-content:center;cursor:pointer;
+}
+.menu-btn span{display:block;width:18px;height:2px;background:var(--ink);position:relative}
+.menu-btn span::before,.menu-btn span::after{
+  content:"";position:absolute;left:0;width:18px;height:2px;background:var(--ink);
+}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+#searchMsg{
+  display:none;font-size:13px;color:var(--warn);background:#fbeee9;
+  border:1px solid #f0d3c8;border-radius:var(--radius-sm);padding:7px 12px;margin:0 var(--sp);
+}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#fdf3df 0%,#fdfaf3 55%,#eef5f1 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{
+  max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,58px) var(--sp) clamp(30px,5vw,56px);
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,4vw,46px);align-items:center;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;
+  color:var(--main-deep);background:#fff;border:1px solid #f2dfb9;border-radius:999px;
+  padding:5px 14px;margin-bottom:16px;
+}
+.hero-badge i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero h1{
+  font-size:clamp(30px,5.2vw,50px);letter-spacing:1px;margin-bottom:14px;
+}
+.hero h1 b{color:var(--main-deep)}
+.hero .lede{
+  font-size:clamp(15px,1.6vw,17px);color:var(--ink-soft);max-width:33em;margin-bottom:20px;
+}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.hero-facts div{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:8px 14px;font-size:13px;color:var(--ink-soft);
+}
+.hero-facts b{display:block;font-size:20px;color:var(--ink);line-height:1.3}
+.hero-btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:999px;font-size:15px;font-weight:700;
+  transition:transform .16s,box-shadow .16s,background .16s;
+}
+.btn-main{background:var(--main);color:#fff;box-shadow:var(--shadow)}
+.btn-main:hover{background:var(--main-deep);transform:translateY(-2px);text-decoration:none}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--main);transform:translateY(-2px);text-decoration:none}
+.hero-art{position:relative;min-height:260px;display:flex;align-items:center;justify-content:center}
+.hero-art svg{width:100%;max-width:420px;height:auto}
+
+/* 通用布局 */
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp)}
+.layout{
+  max-width:1180px;margin:0 auto;padding:clamp(24px,4vw,44px) var(--sp);
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(18px,3vw,36px);
+  align-items:start;
+}
+main{min-width:0}
+aside.side{position:sticky;top:calc(var(--head-h) + var(--notice-h) + 18px);display:flex;flex-direction:column;gap:18px}
+.sec{margin-bottom:clamp(30px,5vw,52px)}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.sec-head h2{font-size:clamp(21px,2.6vw,26px);letter-spacing:.4px}
+.sec-head .cn{font-size:12px;color:var(--main-deep);font-weight:700;letter-spacing:1px;border:1px solid #f0dcb4;border-radius:999px;padding:2px 10px;background:#fff}
+.sec-desc{color:var(--ink-soft);font-size:14.5px;margin-bottom:18px;max-width:48em}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:clamp(16px,2.4vw,24px);
+}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:6px 13px;font-size:13.5px;color:var(--ink-soft);
+  transition:border-color .16s,color .16s,transform .16s;
+}
+.chip:hover{border-color:var(--main);color:var(--main-deep);text-decoration:none;transform:translateY(-2px)}
+
+/* 概览 */
+.overview{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+.ov-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.ov-list li{display:flex;gap:12px;font-size:14.5px;color:var(--ink-soft)}
+.ov-list li b{color:var(--ink);flex:none;min-width:5.2em}
+.ov-quote{
+  background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:var(--radius-sm);
+  padding:14px 16px;font-size:14.5px;color:#2e5749;
+}
+.ov-quote cite{display:block;font-style:normal;font-size:12.5px;color:#5b8477;margin-top:8px}
+
+/* 精选卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pick{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--shadow);
+  transition:transform .18s,box-shadow .18s;
+}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.pick img{width:100%;height:132px;object-fit:cover}
+.pick-body{padding:13px 15px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pick-body h3{font-size:15.5px}
+.pick-body p{font-size:13.5px;color:var(--ink-soft);margin:0;flex:1}
+.pick-meta{font-size:12px;color:#8c8577;display:flex;gap:10px;flex-wrap:wrap}
+
+/* 最新更新紧凑列表 */
+.updates{list-style:none;margin:0;padding:0}
+.updates li{
+  display:grid;grid-template-columns:78px 1fr;gap:12px;padding:11px 0;
+  border-bottom:1px dashed var(--line);font-size:14.5px;
+}
+.updates li:last-child{border-bottom:0}
+.updates time{color:var(--main-deep);font-weight:700;font-size:13px;font-variant-numeric:tabular-nums}
+.updates .u-body{color:var(--ink-soft)}
+.updates .u-body b{color:var(--ink)}
+.updates a{font-size:13px;white-space:nowrap}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px;transition:border-color .16s,transform .16s;color:var(--ink);
+}
+.cat:hover{border-color:var(--main);transform:translateY(-3px);text-decoration:none}
+.cat strong{display:block;font-size:15px;margin-bottom:3px}
+.cat span{font-size:12.5px;color:var(--ink-soft);line-height:1.6;display:block}
+.cat em{font-style:normal;font-size:12px;color:var(--main-deep);font-weight:700}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.deep-top{padding:clamp(18px,3vw,28px) clamp(18px,3vw,30px) 6px;border-bottom:1px solid #f3ecdc;background:linear-gradient(180deg,#fffdf7,#fff)}
+.deep-top .kicker{font-size:12.5px;font-weight:700;color:var(--accent);letter-spacing:1px}
+.deep-body{padding:clamp(16px,3vw,28px) clamp(18px,3vw,30px) clamp(20px,3vw,30px)}
+.deep-body h3{font-size:18px;margin:22px 0 8px;padding-left:12px;border-left:4px solid var(--sun)}
+.deep-body h3:first-child{margin-top:0}
+.deep-body p{font-size:15.5px;color:#3c3934}
+.judge{
+  border:1px solid #eddcc0;background:#fffaf0;border-radius:var(--radius-sm);
+  padding:14px 16px;margin:14px 0;font-size:15px;
+}
+.judge strong{color:var(--main-deep)}
+.verify{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-direction:column;gap:8px}
+.verify li{
+  display:grid;grid-template-columns:auto 1fr;gap:10px;font-size:14px;color:var(--ink-soft);
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:9px 12px;
+}
+.verify li i{font-style:normal;color:var(--accent);font-weight:700;flex:none}
+table.cmp{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 16px}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+table.cmp th{background:#faf3e4;font-size:13.5px;color:#5a5140}
+table.cmp td{color:var(--ink-soft)}
+table.cmp td b{color:var(--ink)}
+
+/* 体验指南步骤 */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.steps li{
+  position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 16px 16px 56px;box-shadow:var(--shadow);
+}
+.steps li::before{
+  counter-increment:st;content:counter(st);position:absolute;left:14px;top:14px;
+  width:30px;height:30px;border-radius:50%;background:var(--main);color:#fff;
+  font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;
+}
+.steps h3{font-size:15.5px;margin-bottom:5px}
+.steps p{font-size:13.8px;color:var(--ink-soft);margin:0}
+
+/* FAQ */
+details.faq{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:0;margin-bottom:10px;overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;list-style:none;padding:13px 44px 13px 16px;font-weight:700;font-size:15px;
+  position:relative;color:var(--ink);
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--main-deep);font-weight:400;
+}
+details.faq[open] summary::after{content:"–"}
+details.faq .fa-a{padding:0 16px 15px;font-size:14.5px;color:var(--ink-soft);border-top:1px dashed var(--line);margin-top:2px;padding-top:12px}
+details.faq[open] summary{background:#fffaf0}
+
+/* 评论 */
+.comment-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.comment{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px;
+  font-size:14.2px;color:#3d3932;display:flex;flex-direction:column;gap:8px;
+}
+.comment .cm-head{display:flex;align-items:center;gap:9px}
+.avatar{
+  width:32px;height:32px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:800;color:#fff;background:var(--accent);
+}
+.avatar.c1{background:#d98b3e}.avatar.c2{background:#3d7a6a}.avatar.c3{background:#8a6fa8}
+.avatar.c4{background:#c0553d}.avatar.c5{background:#4a7fa8}.avatar.c6{background:#9a8b3f}
+.comment .who{font-size:13px;font-weight:700;color:var(--ink)}
+.comment .when{font-size:12px;color:#948d80;margin-left:auto;flex:none}
+.comment p{margin:0}
+.comment .quote-item{
+  font-size:12.5px;color:var(--main-deep);background:#fdf5e6;border-radius:6px;padding:4px 9px;
+  align-self:flex-start;
+}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative;padding-left:22px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 16px 8px;font-size:14.3px;color:var(--ink-soft)}
+.timeline li::before{
+  content:"";position:absolute;left:-22px;top:7px;width:9px;height:9px;border-radius:50%;
+  background:var(--main);border:2px solid var(--paper);
+}
+.timeline b{display:block;color:var(--ink);font-size:14.5px}
+.timeline time{font-size:12.5px;color:var(--main-deep);font-weight:700}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank li{
+  display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px dashed var(--line);
+  font-size:14.3px;
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  counter-increment:rk;content:counter(rk);flex:none;width:24px;height:24px;border-radius:7px;
+  background:#f4e8cd;color:var(--main-deep);font-weight:800;font-size:13px;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.rank b{color:var(--ink)}
+.rank span{color:var(--ink-soft)}
+
+/* 相关推荐标签 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px}
+.tag-index a{
+  background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 12px;
+  font-size:13.5px;color:var(--ink-soft);transition:border-color .16s,color .16s;
+}
+.tag-index a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.side-card h3{font-size:15px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid #f2ecdd}
+.side-nav{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+.side-nav a{
+  display:block;font-size:13.8px;color:var(--ink-soft);padding:6px 10px;border-radius:7px;
+  border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#faf5e9;text-decoration:none}
+.side-nav a.active{color:var(--main-deep);font-weight:700;background:#fbf1dd;border-left-color:var(--main)}
+.side-mini{font-size:13.3px;color:var(--ink-soft);display:flex;flex-direction:column;gap:9px}
+.side-mini div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dashed #f0e9d8;padding-bottom:8px}
+.side-mini div:last-child{border-bottom:0;padding-bottom:0}
+.side-mini b{color:var(--ink);font-weight:700}
+
+/* 页尾 */
+footer.site-foot{
+  background:#2b2a28;color:#cfc7b6;margin-top:20px;padding:clamp(28px,4vw,48px) 0 26px;font-size:14px;
+}
+.foot-wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp)}
+.foot-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px;padding-bottom:24px;border-bottom:1px solid #43413c}
+.foot-brand{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.foot-brand svg{width:30px;height:30px}
+.foot-brand strong{color:#fff;font-size:17px;letter-spacing:.5px}
+.foot-pos{color:#b3aa98;font-size:13.5px;max-width:24em;line-height:1.7}
+.foot-col h4{color:#f2e9d6;font-size:14px;margin-bottom:10px;letter-spacing:.5px}
+.foot-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
+.foot-col a{color:#b8b0a0;font-size:13.3px}
+.foot-col a:hover{color:var(--sun);text-decoration:none}
+.foot-note{font-size:12.5px;color:#8f887b;padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between}
+.foot-note p{margin:0}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:16px;bottom:20px;z-index:80;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--main-deep);font-size:19px;font-weight:800;
+  cursor:pointer;box-shadow:var(--shadow-lift);display:none;align-items:center;justify-content:center;
+}
+#toTop.show{display:flex}
+#toTop:hover{background:#fdf3df}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  aside.side{position:static;order:2;margin-top:8px}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{min-height:0;order:-1;max-width:340px;margin:0 auto}
+  .pick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .overview{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .menu-btn{display:flex}
+  nav.main-nav{
+    position:absolute;left:0;right:0;top:calc(var(--head-h) + var(--notice-h));
+    background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;
+    align-items:stretch;padding:8px var(--sp) 14px;gap:2px;display:none;
+    box-shadow:var(--shadow-lift);
+  }
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{padding:10px 8px;border-radius:8px}
+  header.site-head{position:relative}
+  .head-tools{margin-left:auto}
+  .search-box input{width:88px}
+  .grid2,.pick-grid,.steps,.comment-list{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .updates li{grid-template-columns:66px 1fr}
+  .foot-top{grid-template-columns:1fr}
+  .notice{font-size:12px;gap:7px}
+}
+@media (max-width:380px){
+  .search-box input{width:66px}
+  .brand-name{font-size:16px}
+  .cat-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .pick:hover,.cat:hover,.chip:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="top-wrap">
+  <div class="notice" role="region" aria-label="站内更新公告">
+    <span class="tag">更新</span>
+    <span class="nt-track">11月7日新增「双人午睡错峰排表」与两段争抢玩具实录；今日 14:00 上线滑步车交换计时表</span>
+    <a href="/#updates">查看</a>
+  </div>
+  <header class="site-head">
+    <a class="brand" href="/#top" aria-label="悠宝三岁双人 首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#f5c04a"/>
+        <circle cx="23" cy="27" r="9" fill="#fff"/>
+        <circle cx="43" cy="27" r="9" fill="#fff"/>
+        <circle cx="23" cy="27" r="3.6" fill="#3b3831"/>
+        <circle cx="43" cy="27" r="3.6" fill="#3b3831"/>
+        <path d="M21 43q11 9 22 0" stroke="#3b3831" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+        <circle cx="15" cy="36" r="2.6" fill="#e08a2c"/>
+        <circle cx="51" cy="36" r="2.6" fill="#e08a2c"/>
+      </svg>
+      <span class="brand-name">悠宝<em>三岁双人</em></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="展开导航菜单">
+      <span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">双人日常</a>
+      <a href="/#picks">精选</a>
+      <a href="/#updates">最新</a>
+      <a href="/#cats">分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">问答</a>
+      <a href="/#comments">评论</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box" role="search">
+        <label for="siteSearch" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内查找</label>
+        <input id="siteSearch" type="search" placeholder="找条目…" autocomplete="off">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+    </div>
+  </header>
+  <p id="searchMsg" role="status" aria-live="polite"></p>
+</div>
+
+<a id="top"></a>
+
+<section class="hero" aria-label="主题首屏">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-badge"><i></i>2026年11月8日 · 第31周记录</span>
+      <h1>悠宝<b>三岁双人</b></h1>
+      <p class="lede">两个三岁孩子住在同一屋檐下的养育记录：一餐分几勺、一车骑几分钟、午睡相差多少、语言进度差在哪。31条带时间戳的实拍条目，8套争抢与分餐处理流程，全部来自家庭内部日常，不美化也不省略。</p>
+      <div class="hero-facts">
+        <div><b>31</b>条实拍记录</div>
+        <div><b>8</b>套冲突流程</div>
+        <div><b>87</b>件共用玩具清点</div>
+        <div><b>12</b>分钟入睡时间差</div>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-main" href="/#deep">读深度解析</a>
+        <a class="btn btn-ghost" href="/#updates">看本周更新</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 340" role="img">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fbe6bd"/><stop offset="1" stop-color="#e6f1ed"/>
+          </linearGradient>
+        </defs>
+        <rect x="10" y="14" width="400" height="312" rx="26" fill="url(#hg)"/>
+        <circle cx="120" cy="128" r="54" fill="#fff" opacity=".9"/>
+        <circle cx="120" cy="128" r="54" fill="none" stroke="#e08a2c" stroke-width="2.5" stroke-dasharray="5 7"/>
+        <circle cx="120" cy="120" r="6" fill="#3b3831"/>
+        <circle cx="146" cy="120" r="6" fill="#3b3831"/>
+        <path d="M107 146q13 12 26 0" stroke="#3b3831" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M96 96q24-28 48 0" stroke="#3b3831" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <circle cx="282" cy="150" r="46" fill="#fff" opacity=".92"/>
+        <circle cx="282" cy="143" r="5.4" fill="#3b3831"/>
+        <circle cx="304" cy="143" r="5.4" fill="#3b3831"/>
+        <path d="M271 166q11 10 22 0" stroke="#3b3831" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+        <path d="M268 118q14-14 28-2" stroke="#3b3831" stroke-width="4.4" fill="none" stroke-linecap="round"/>
+        <rect x="132" y="212" width="64" height="76" rx="10" fill="#f5c04a"/>
+        <rect x="140" y="222" width="48" height="30" rx="6" fill="#fffdf6"/>
+        <circle cx="150" cy="272" r="8" fill="#3b3831"/>
+        <circle cx="178" cy="272" r="8" fill="#3b3831"/>
+        <rect x="232" y="224" width="60" height="64" rx="10" fill="#3d7a6a"/>
+        <rect x="240" y="234" width="44" height="24" rx="5" fill="#e6f1ed"/>
+        <circle cx="248" cy="274" r="7" fill="#25332d"/>
+        <circle cx="276" cy="274" r="7" fill="#25332d"/>
+        <path d="M206 250h18" stroke="#3b3831" stroke-width="4" stroke-linecap="round"/>
+        <path d="M200 264q11 7 22 0" stroke="#3b3831" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+        <text x="210" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#b96a15" font-family="sans-serif">3岁 × 2</text>
+        <text x="210" y="88" text-anchor="middle" font-size="13" fill="#5c5850" font-family="sans-serif">同住 / 同玩 / 各自睡觉</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+<main>
+  <!-- 领域概览 -->
+  <section class="sec" id="overview" aria-labelledby="h-overview">
+    <div class="sec-head"><h2 id="h-overview">双人日常</h2><span class="cn">领域概览</span></div>
+    <p class="sec-desc">三岁前后的两个孩子同时在家，真正每天要处理的只有四件事：吃、睡、抢、说。下面这组数来自本周一至周日的家庭记录，不是育儿理论复述。</p>
+    <div class="overview">
+      <div class="card">
+        <ul class="ov-list">
+          <li><b>分餐</b>同款餐盘、不同颜色餐垫6套轮换；每餐主食50—75克熟重，蛋白质30—40克。10月30日启用后剩饭从约40%降到15%。</li>
+          <li><b>午睡</b>12:50—14:00为窗口，起床时间固定7:10。11月2日把户外活动提前到上午10点，两人入睡时间差从47分钟压到12分钟。</li>
+          <li><b>争抢</b>滑步车、绘本《小熊邮差》、水杯盖三件为高频争夺物。厨房计时器3分钟轮换，单次争抢平均时长从6分钟降到80秒。</li>
+          <li><b>语言</b>11月4日测词：大宝约760词，小宝约420词。差异被记录为进度差，不按高低评价。</li>
+        </ul>
+      </div>
+      <div class="ov-quote">
+        10月28日的第一次计时器实验没有成功：响铃后大宝把计时器按停了两次，流程改为“家长拿计时器、孩子只负责换人”之后才稳定下来。
+        <cite>——11月1日家庭复盘笔记第14页</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选内容推荐 -->
+  <section class="sec" id="picks" aria-labelledby="h-picks">
+    <div class="sec-head"><h2 id="h-picks">精选内容</h2><span class="cn">本周推荐</span></div>
+    <p class="sec-desc">四条记录，各自解决一个具体问题，互不重复。</p>
+    <div class="pick-grid">
+      <a class="pick" href="/#guide">
+        <img src="https://picsum.photos/seed/youbao-meal/560/330" width="560" height="330" loading="lazy" alt="两个三岁孩子分坐餐垫前用同款餐盘吃饭" style="object-fit:cover">
+        <div class="pick-body">
+          <h3>双人分餐盘摆法</h3>
+          <p>颜色区分餐垫、汤碗放外侧，减少伸手越界。含11月3日两餐实拍对比。</p>
+          <div class="pick-meta"><span>体验指南</span><span>11月3日</span></div>
+        </div>
+      </a>
+      <a class="pick" href="/#deep">
+        <img src="https://picsum.photos/seed/youbao-scooter/560/330" width="560" height="330" loading="lazy" alt="阳台上并排放置的两辆儿童滑步车" style="object-fit:cover">
+        <div class="pick-body">
+          <h3>滑步车只有一辆怎么分</h3>
+          <p>3分钟计时器加备用车的组合方案，附单次争抢时长对比数据。</p>
+          <div class="pick-meta"><span>深度解析</span><span>11月5日</span></div>
+        </div>
+      </a>
+      <a class="pick" href="/#faq">
+        <img src="https://picsum.photos/seed/youbao-words/560/330" width="560" height="330" loading="lazy" alt="画有启蒙卡片和词汇统计表的桌面" style="object-fit:cover">
+        <div class="pick-body">
+          <h3>三岁双人词汇差半年</h3>
+          <p>760词与420词的测词方法，以及判断“是否在进步”的三条核对线索。</p>
+          <div class="pick-meta"><span>问答</span><span>11月4日</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="sec" id="updates" aria-labelledby="h-updates">
+    <div class="sec-head"><h2 id="h-updates">最新更新</h2><span class="cn">按时间倒序</span></div>
+    <div class="card">
+      <ul class="updates">
+        <li><time datetime="2026-11-08">今天</time><span class="u-body"><b>滑步车交换计时表</b>上线，记录三分钟一换的两次实测：第一次交换在2分41秒完成，第二次因小宝拒绝下车延后到4分12秒。</span><a href="/#guide">看流程</a></li>
+        <li><time datetime="2026-11-07">昨天</time><span class="u-body"><b>双人午睡错峰排表</b>补入11月2日至7日的入睡时间，午睡窗口统一到12:50—14:00，最长入睡时间差12分钟。</span><a href="/#faq">看排表</a></li>
+        <li><time datetime="2026-11-06">11月6日</time><span class="u-body"><b>家长任务分工表</b>改版：由按小时平分改为按任务分工，一人管早晨送托与晚饭，一人管洗澡与睡前绘本。</span><a href="/#comments">看讨论</a></li>
+        <li><time datetime="2026-11-05">11月5日</time><span class="u-body"><b>争抢玩具实录</b>补录两段，共记录七次争抢，其中四次与水杯盖有关。</span><a href="/#deep">读解析</a></li>
+        <li><time datetime="2026-11-04">11月4日</time><span class="u-body"><b>测词记录</b>：大宝约760词，小宝约420词；新增“说完整句”和“复述绘本”两项观察。</span><a href="/#faq">看问答</a></li>
+        <li><time datetime="2026-11-03">11月3日</time><span class="u-body"><b>分餐盘摆法</b>更新，剩饭比例由约40%降至15%，附两餐实拍对照。</span><a href="/#guide">看摆法</a></li>
+        <li><time datetime="2026-11-01">11月1日</time><span class="u-body"><b>共用玩具清点</b>：87件，可水洗64件，毛绒9件，木质14件；消毒周期按材质分三组。</span><a href="/#cats">看分类</a></li>
+        <li><time datetime="2026-10-30">10月30日</time><span class="u-body"><b>分餐制度启用</b>，同款餐盘配不同颜色餐垫，正式替换混餐。</span><a href="/#overview">看概览</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="sec" id="cats" aria-labelledby="h-cats">
+    <div class="sec-head"><h2 id="h-cats">分类入口</h2><span class="cn">按场景找</span></div>
+    <p class="sec-desc">十个常搜场景，每个入口下的记录按日期排序，点进去先看到最近三条。</p>
+    <div class="cat-grid">
+      <a class="cat" href="/#guide"><strong>双人分餐盘</strong><span>餐垫配色、份量、剩饭统计</span><em>6条</em></a>
+      <a class="cat" href="/#updates"><strong>双人午睡排表</strong><span>入睡窗口、时间差、叫醒方式</span><em>5条</em></a>
+      <a class="cat" href="/#deep"><strong>滑步车争抢</strong><span>计时器、轮换、备用车</span><em>4条</em></a>
+      <a class="cat" href="/#faq"><strong>三岁词汇量差异</strong><span>测词方法、进步判断</span><em>3条</em></a>
+      <a class="cat" href="/#comments"><strong>家长任务分工</strong><span>早晚班、洗澡、绘本</span><em>4条</em></a>
+      <a class="cat" href="/#guide"><strong>共用玩具消毒</strong><span>含氯稀释、水洗温度</span><em>3条</em></a>
+      <a class="cat" href="/#picks"><strong>同住绘本清单</strong><span>可读性、抢书频率</span><em>5条</em></a>
+      <a class="cat" href="/#timeline"><strong>入托适应记录</strong><span>接送顺序、分离哭闹</span><em>4条</em></a>
+      <a class="cat" href="/#rank"><strong>高频争抢物榜单</strong><span>按次数与时长排</span><em>1条</em></a>
+      <a class="cat" href="/#tags"><strong>双人出行准备</strong><span>推车、水杯、备用衣物</span><em>3条</em></a>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="sec" id="deep" aria-labelledby="h-deep">
+    <div class="deep">
+      <div class="deep-top">
+        <span class="kicker">深度解析 · 全页唯一主体阅读区</span>
+        <h2 id="h-deep" style="font-size:clamp(22px,3vw,28px);margin-top:6px">三岁双人争抢的核心不是“分享”，是轮换规则能不能被执行</h2>
+        <p style="color:var(--ink-soft);font-size:14px;margin:8px 0 0">一个可被反驳的判断：两个孩子能不能少打起来，取决于规则是否有可见的计时装置和固定的换人话术，而不取决于他们“懂不懂分享”。</p>
+      </div>
+      <div class="deep-body">
+        <h3>判断一：计时器比劝说有效，因为争抢的长度可以被外部切断</h3>
+        <p>10月28日到11月5日的七天里，家里总共记录到滑步车争抢23次，水杯盖争抢11次，绘本《小熊邮差》争夺7次。10月28日之前，处理方式是口头劝：“一人骑一圈就换。”当天记录显示，这句话平均要重复4到6遍才生效，单次争抢从开始哭到结束平均6分钟。</p>
+        <p>10月28日第一次上厨房计时器，设3分钟。当天失败：大宝在响铃前按停了两次计时器，小三岁的孩子对“按钮”的兴趣大于规则。10月31日改成计时器放在家长手里，孩子只负责听到铃声换人，当天三次轮换全部在3分10秒内完成。11月1日至5日，单次争抢平均降到80秒。</p>
+        <div class="judge"><strong>可反驳点：</strong>如果两个孩子本来就性格温和，计时器的效果可能被高估。11月2日两人在玩积木时没有使用计时器，连续共处22分钟未发生争抢，说明“争抢”并不是恒定状态，规则只在争夺物稀缺时起作用。</div>
+
+        <h3>判断二：同一件玩具的“所有权”说清楚，比教“分享”更能减少冲突</h3>
+        <p>家里做了个粗糙的对照。11月3日和11月4日两天，对滑步车采用“公共轮流”，对水杯盖采用“各自认领”：大宝的盖子贴蓝色圆点，小宝的贴橙色圆点，混用即换回。两天记录如下。</p>
+        <table class="cmp">
+          <caption style="text-align:left;font-size:12.5px;color:#8c8577;padding:4px 0 8px">11月3日—4日，滑步车与水杯盖冲突次数对照（家庭手记第21页）</caption>
+          <thead><tr><th>物品</th><th>规则</th><th>冲突次数</th><th>平均结束时长</th></tr></thead>
+          <tbody>
+            <tr><td>滑步车</td><td>公共轮流、3分钟计时</td><td>5次</td><td>约1分20秒</td></tr>
+            <tr><td>水杯盖</td><td>各自认领、贴圆点</td><td>1次</td><td>约40秒</td></tr>
+          </tbody>
+        </table>
+        <p>水杯盖冲突从11次降到1次，原因不是孩子更懂礼貌，而是“这个盖子不是我的”一句话就能被验证——看圆点。滑步车无法贴圆点，只能靠时间规则，于是冲突仍会发生，只是结束得更快。</p>
+
+        <h3>判断三：午睡不同步，主要影响的是家长，不是孩子</h3>
+        <p>11月2日之前，两人午睡时间相差47分钟：大宝12:40睡着，小宝13:27才睡。家长要在中间反复进出房间，结果是谁都没睡踏实。11月2日调整户外活动到上午10点，并把午睡窗口固定在12:50—14:00，入睡时间差压缩到12分钟。</p>
+        <p>需要说清楚的是，入睡差缩小后，两人午睡总时长并没有变长：11月2日至7日平均午睡时长仍是1小时18分，与10月底的1小时21分基本持平。改变的只是家长在12:50到13:27之间的往返次数，从每天约5次降到1次。因此“午睡同步”对孩子的收益证据不足，对照顾者负担的减轻是可以核对的。</p>
+
+        <h3>判断四：语言进度差半年，先看趋势，再谈干预</h3>
+        <p>11月4日测词，大宝约760词，小宝约420词，差距约340词。三岁阶段词汇量个体差异可达300到1000词，这个差距本身不构成异常。真正需要看的是11月1日到7日的记录里，小宝有没有新增词：本周新增“拧开”“还要”“掉下去”三个，说明在进步。</p>
+        <p>如果换一种情况——两周内新增词为0，且不主动提要求，那才值得去儿童保健科做一次语言筛查。这个判断标准可以写下来核对：<b>看增量、看主动性、看理解指令</b>，三项里两项停滞再就医。</p>
+        <ul class="verify">
+          <li><i>日期</i>11月4日测词，方法为绘本指认加日常对话记录，非标准化量表。</li>
+          <li><i>数字</i>大宝760词、小宝420词，与10月28日的约700词、约390词相比均在增长。</li>
+          <li><i>措辞</i>家庭记录里写的是“小宝还不太会说完整句”，没有写“落后”，这一措辞差异影响后续判断。</li>
+        </ul>
+
+        <h3>把判断拆成可核对的结构</h3>
+        <table class="cmp">
+          <thead><tr><th>争议说法</th><th>事实</th><th>目前只能推测</th></tr></thead>
+          <tbody>
+            <tr><td>“双人一起带更省事”</td><td>两人同睡同吃后，家长往返次数下降，但单次处理冲突的强度上升</td><td>长期是否更省精力，7天数据不足以证明</td></tr>
+            <tr><td>“抢玩具就是缺安全感”</td><td>23次滑步车争抢中，19次发生在下午4点后</td><td>与困倦有关还是与玩具稀缺有关，尚未分开验证</td></tr>
+            <tr><td>“词汇少要多教”</td><td>小宝本周新增3个词，来自日常对话而非卡片训练</td><td>增加卡片教学是否更快，没有对照</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section class="sec" id="guide" aria-labelledby="h-guide">
+    <div class="sec-head"><h2 id="h-guide">体验指南</h2><span class="cn">操作步骤</span></div>
+    <p class="sec-desc">六步，从分餐到出门，每步都写清先做什么、用多少时间、失败了怎么退回上一步。</p>
+    <ol class="steps">
+      <li><h3>摆餐盘：先定位置再定份量</h3><p>两人分坐长桌两端，餐垫一蓝一橙。主食先盛50克，蛋白质30克放外侧碗。11月3日两餐对比，先摆位置再盛饭，比先盛饭后找位置少洒汤约两次。</p></li>
+      <li><h3>设3分钟计时器，家长手持</h3><p>计时器不交给孩子。响铃即换人，话术固定为“铃响了，换”。10月31日起连续五天执行，三次全部在3分10秒内完成。</p></li>
+      <li><h3>午睡窗口压在12:50—14:00</h3><p>上午10点户外活动40分钟，回屋后洗手、换睡衣、拉窗帘。11月2日起入睡时间差12分钟，固定7:10起床。</p></li>
+      <li><h3>水杯盖贴圆点，各自认领</h3><p>蓝点归大宝，橙点归小宝，混用直接换回，不做说教。11月3日至4日冲突从11次降到1次。</p></li>
+      <li><h3>玩具按材质分三组消毒</h3><p>塑料每周含氯稀释擦拭后清水再擦；毛绒60摄氏度水洗；木质只擦不泡。87件中可水洗64件，分三天轮完。</p></li>
+      <li><h3>出门前按清单装包</h3><p>水杯两只、备用衣各一套、湿巾、计时器。11月6日按清单出门，漏带率从每周两次降到零，单次装包用时约4分钟。</p></li>
+    </ol>
+  </section>
+
+  <!-- 时间线 -->
+  <section class="sec" id="timeline" aria-labelledby="h-timeline">
+    <div class="sec-head"><h2 id="h-timeline">入托适应时间线</h2><span class="cn">10月10日—11月7日</span></div>
+    <div class="card">
+      <ul class="timeline">
+        <li><time datetime="2026-10-12">10月12日</time><b>第一次分开送托</b>大宝先入园，小宝后半小时。小宝在门口哭约6分钟，老师抱进去后停止。</li>
+        <li><time datetime="2026-10-19">10月19日</time><b>改同车送</b>两人坐同一辆推车到门口再分开，哭闹时间缩到约2分钟，但大宝开始不愿先进门。</li>
+        <li><time datetime="2026-10-26">10月26日</time><b>交换顺序</b>小宝先入园，大宝后进。持续三天后，两人门口哭闹均不超过1分钟。</li>
+        <li><time datetime="2026-11-02">11月2日</time><b>接回顺序固定</b>先接小宝再接大宝，避免大宝在走廊等太久。当天记录等待时间约90秒。</li>
+        <li><time datetime="2026-11-07">11月7日</time><b>本周稳定</b>连续五天早上无哭闹，但午睡在园内仍分床，老师反馈两人午睡说话约3分钟才安静。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq" aria-labelledby="h-faq">
+    <div class="sec-head"><h2 id="h-faq">常见问答</h2><span class="cn">六个高频问题</span></div>
+    <details class="faq" open>
+      <summary>两个三岁孩子总抢同一辆滑步车怎么办？</summary>
+      <div class="fa-a">把抢车拆成排队和交换两件事。厨房计时器设3分钟，由家长手持，响铃换人；同时把一辆备用滑步车放在阳台备着。10月28日到11月5日的记录里，计时器稳定执行后单次争抢平均时长从6分钟降到80秒。需要注意的是，备用车一旦放在显眼处，两人会同时放弃手里那辆去抢备用车，所以备用车平时收起来。</div>
+    </details>
+    <details class="faq">
+      <summary>三岁双人午睡时间不同步怎么排？</summary>
+      <div class="fa-a">先固定起床时间7:10，再把午睡窗口压到12:50—14:00。11月2日起把户外活动提前到上午10点，两名孩子入睡时间差从47分钟缩到12分钟。若其中一人实在睡不着，允许在床上看一本绘本，但不允许下床，否则另一人必定跟着起来。</div>
+    </details>
+    <details class="faq">
+      <summary>两个三岁孩子语言进度差半年正常吗？</summary>
+      <div class="fa-a">三岁阶段词汇量个体差异可达300到1000词。11月4日测词，大宝约760词，小宝约420词。判断标准看是否在进步，而不是看两人是否齐平：本周小宝新增“拧开”“还要”“掉下去”三个词，属于正常进度差。若两周内新增词为零且不主动提要求，再去儿童保健科做语言筛查。</div>
+    </details>
+    <details class="faq">
+      <summary>双人分餐需要注意哪些量？</summary>
+      <div class="fa-a">三岁儿童每餐主食约50到75克熟重，蛋白质约30到40克。两名孩子用同款餐盘、不同颜色餐垫，汤碗放外侧。10月30日启用分餐后，每餐剩饭从约40%降到15%。份量不必每餐称重，用固定的小碗和勺子就能大致稳定。</div>
+    </details>
+    <details class="faq">
+      <summary>家长两人轮流带双人怎么分工？</summary>
+      <div class="fa-a">按任务分而不是按时间平分：一人负责早晨送托和晚饭，另一人负责洗澡与睡前绘本。11月6日一周表显示，明确任务后家长单日抱娃时长下降约半小时，争吵次数从每周三次降到一次。按小时平分容易在“谁多做了一顿”上纠缠，按任务分则每件事都有责任人。</div>
+    </details>
+    <details class="faq">
+      <summary>两个三岁孩子共用玩具如何消毒？</summary>
+      <div class="fa-a">塑料玩具每周用含氯消毒液按说明稀释擦拭，之后用清水再擦一遍；毛绒玩具60摄氏度水洗；木质玩具只擦不泡。11月1日清点玩具共87件，其中可水洗64件、毛绒9件、木质14件，分三天轮完，不必一次全消。</div>
+    </details>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="sec" id="comments" aria-labelledby="h-comments">
+    <div class="sec-head"><h2 id="h-comments">用户评论</h2><span class="cn">本周12条中选6条</span></div>
+    <div class="comment-list">
+      <div class="comment">
+        <div class="cm-head"><span class="avatar c1">林</span><span class="who">林间小满</span><span class="when">11月7日</span></div>
+        <p>计时器放家长手里这一条太实用了。我家两个两岁半，之前把沙漏给孩子，结果沙漏成了新战场。</p>
+        <span class="quote-item">关于：滑步车交换计时表</span>
+      </div>
+      <div class="comment">
+        <div class="cm-head"><span class="avatar c2">周</span><span class="who">周家双份</span><span class="when">11月6日</span></div>
+        <p>任务分工那段写得还行，但按任务分也有坑：洗澡那天要是加班，整条链就断了。我们现在加了“替补条款”。</p>
+        <span class="quote-item">关于：家长任务分工表</span>
+      </div>
+      <div class="comment">
+        <div class="cm-head"><span class="avatar c3">阿</span><span class="who">阿桃不忙</span><span class="when">11月5日</span></div>
+        <p>水杯盖贴圆点，这个我是真的服。我们家为两个一样的吸管杯吵了整整一个月，贴了名字贴纸第二天就不吵了。</p>
+        <span class="quote-item">关于：水杯盖认领</span>
+      </div>
+      <div class="comment">
+        <div class="cm-head"><span class="avatar c4">老</span><span class="who">老陈带娃</span><span class="when">11月5日</span></div>
+        <p>词汇那篇我觉得有点乐观。420词和760词差340词，其实不小了。当然看增量这个思路我同意，只是别安慰过头。</p>
+        <span class="quote-item">关于：三岁词汇量差异</span>
+      </div>
+      <div class="comment">
+        <div class="cm-head"><span class="avatar c5">崔</span><span class="who">崔崔在家</span><span class="when">11月4日</span></div>
+        <p>午睡同步那段提到“对家长收益更大”，这个说法我认。我们家两个孩子差50分钟睡，那50分钟像打仗。</p>
+        <span class="quote-item">关于：双人午睡排表</span>
+      </div>
+      <div class="comment">
+        <div class="cm-head"><span class="avatar c6">核</span><span class="who">核桃花生</span><span class="when">11月3日</span></div>
+        <p>分餐盘那份量我照着做，两个孩子吃完都喊饿，后来主食加到65克才够。50克对我们家偏少。</p>
+        <span class="quote-item">关于：双人分餐盘摆法</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="sec" id="news" aria-labelledby="h-news">
+    <div class="sec-head"><h2 id="h-news">相关资讯</h2><span class="cn">本周补充</span></div>
+    <div class="grid2">
+      <div class="card">
+        <h3 style="font-size:16px;margin-bottom:6px">园内午睡分床调整通知</h3>
+        <p style="font-size:14px;color:var(--ink-soft);margin-bottom:8px">11月5日幼儿园通知，小班午睡床位重新排布，两名孩子被分到相邻两床，中间隔一层薄书架。老师反馈两人说话约3分钟才安静。</p>
+        <p style="font-size:12.5px;color:#8c8577;margin:0">来源：园方11月5日家长群通知</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:16px;margin-bottom:6px">社区亲子角新增两辆滑步车</h3>
+        <p style="font-size:14px;color:var(--ink-soft);margin-bottom:8px">11月6日社区活动室新增两辆同款滑步车，可现场借用。家里争抢最凶的那辆与社区款颜色不同，轮换记录显示借用日当天家中争抢次数降为0。</p>
+        <p style="font-size:12.5px;color:#8c8577;margin:0">来源：社区活动室公告栏，11月6日</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 排行榜 -->
+  <section class="sec" id="rank" aria-labelledby="h-rank">
+    <div class="sec-head"><h2 id="h-rank">高频争抢物榜单</h2><span class="cn">10月28日—11月7日</span></div>
+    <div class="card">
+      <ol class="rank">
+        <li><b>滑步车</b><span>23次，平均结束时长80秒，19次发生在下午4点后。</span></li>
+        <li><b>水杯盖</b><span>11次，贴圆点认领后降到1次。</span></li>
+        <li><b>绘本《小熊邮差》</b><span>7次，多发生在睡前绘本时间。</span></li>
+        <li><b>橙色小勺</b><span>5次，两把同款只剩一把，11月2日补齐后归零。</span></li>
+        <li><b>洗澡玩具小黄鸭</b><span>4次，都在洗澡时发生，加一只备用后降到1次。</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 相关推荐 -->
+  <section class="sec" id="tags" aria-labelledby="h-tags">
+    <div class="sec-head"><h2 id="h-tags">相关推荐</h2><span class="cn">按关键词找</span></div>
+    <div class="tag-index">
+      <a href="/#guide">双人分餐盘摆法</a>
+      <a href="/#faq">三岁双人午睡时间差</a>
+      <a href="/#deep">滑步车三分钟轮换</a>
+      <a href="/#faq">词汇量300词差距判断</a>
+      <a href="/#comments">家长早晚班任务分工</a>
+      <a href="/#cats">含氯消毒液玩具擦拭</a>
+      <a href="/#timeline">入托分开送的顺序</a>
+      <a href="/#rank">下午四点争抢高峰</a>
+      <a href="/#updates">水杯盖贴圆点认领</a>
+      <a href="/#picks">同住绘本清单</a>
+    </div>
+  </section>
+</main>
+
+<aside class="side" aria-label="侧栏">
+  <div class="side-card">
+    <h3>栏目导航</h3>
+    <ul class="side-nav" id="sideNav">
+      <li><a href="/#overview">双人日常概览</a></li>
+      <li><a href="/#picks">精选内容</a></li>
+      <li><a href="/#updates">最新更新</a></li>
+      <li><a href="/#cats">分类入口</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#timeline">入托时间线</a></li>
+      <li><a href="/#faq">常见问答</a></li>
+      <li><a href="/#comments">用户评论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#rank">争抢物榜单</a></li>
+      <li><a href="/#tags">相关推荐</a></li>
+    </ul>
+  </div>
+  <div class="side-card">
+    <h3>本周数字</h3>
+    <div class="side-mini">
+      <div><span>实拍记录</span><b>31条</b></div>
+      <div><span>争抢总次数</span><b>50次</b></div>
+      <div><span>平均结束时长</span><b>80秒</b></div>
+      <div><span>午睡入睡时间差</span><b>12分钟</b></div>
+      <div><span>共用玩具</span><b>87件</b></div>
+      <div><span>测词记录</span><b>760 / 420</b></div>
+    </div>
+  </div>
+  <div class="side-card">
+    <h3>数据说明</h3>
+    <p style="font-size:13px;color:var(--ink-soft);margin:0">所有条目的日期在2026年10月10日至11月8日之间；次数与时长为家庭手记现场记录，非标准化测量，引用时请标注记录日期。</p>
+  </div>
+</aside>
+</div>
+
+<footer class="site-foot">
+  <div class="foot-wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#f5c04a"/>
+            <circle cx="23" cy="27" r="9" fill="#fff"/>
+            <circle cx="43" cy="27" r="9" fill="#fff"/>
+            <circle cx="23" cy="27" r="3.6" fill="#3b3831"/>
+            <circle cx="43" cy="27" r="3.6" fill="#3b3831"/>
+            <path d="M21 43q11 9 22 0" stroke="#3b3831" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+          </svg>
+          <strong>悠宝三岁双人</strong>
+        </div>
+        <p class="foot-pos">两个三岁孩子同住一个屋檐的实拍记录，写清时间、次数和失败的那几次。</p>
+      </div>
+      <div class="foot-col">
+        <h4>日常记录</h4>
+        <ul>
+          <li><a href="/#overview">双人日常概览</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#timeline">入托时间线</a></li>
+          <li><a href="/#rank">争抢物榜单</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>方法流程</h4>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#cats">分类入口</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>互动与示例</h4>
+        <ul>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#tags">相关推荐</a></li>
+          <li><a href="/#picks">精选内容</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p>页面数据为家庭示例记录，含虚构细节，不构成医疗或发育评估建议；涉及筛查请咨询儿童保健科。更新时间 2026-11-08，对应正文「最新更新」中的滑步车交换计时表与双人午睡错峰排表两条。</p>
+      <p>© 2026 悠宝三岁双人 · 家庭记录整理</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'&&window.innerWidth<=720){nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}
+  });
+
+  // 搜索
+  var input=document.getElementById('siteSearch');
+  var msg=document.getElementById('searchMsg');
+  var sections=Array.prototype.slice.call(document.querySelectorAll('main section'));
+  function doSearch(){
+    var q=input.value.trim();
+    if(!q){msg.style.display='none';return;}
+    var hit=null;
+    for(var i=0;i<sections.length;i++){
+      if(sections[i].textContent.indexOf(q)>-1){hit=sections[i];break;}
+    }
+    if(hit){
+      msg.style.display='none';
+      hit.scrollIntoView({behavior:'smooth',block:'start'});
+    }else{
+      msg.textContent='没有找到「'+q+'」相关条目，试试“滑步车”“午睡”“分餐”“测词”等词。';
+      msg.style.display='block';
+    }
+  }
+  document.getElementById('searchBtn').addEventListener('click',doSearch);
+  input.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();doSearch();}});
+
+  // 回到顶部
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>520){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  // 侧栏滚动高亮
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  if('IntersectionObserver' in window){
+    var map={};
+    sideLinks.forEach(function(a){map[a.getAttribute('href').replace('/#','')]=a;});
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          sideLinks.forEach(function(a){a.classList.remove('active');});
+          var link=map[en.target.id];
+          if(link){link.classList.add('active');}
+        }
+      });
+    },{rootMargin:'-140px 0px -55% 0px',threshold:0});
+    sections.forEach(function(s){if(s.id){io.observe(s);}});
+  }
+})();
+</script>
+</body>
+          </html>
