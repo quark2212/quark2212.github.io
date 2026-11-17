@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>优联福利平台-员工福利积分与节日慰问方案</title>
+<meta name="description" content="优联福利平台整合员工福利积分、节日慰问品、工会福利采购与企业健康体检，提供预算测算、供应商比价、发放记录与合规票据，附2026年11月节日礼包清单与兑换规则说明。">
+<meta name="keywords" content="优联福利平台">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Cpath d='M16 40 L26 24 L34 36 L40 28 L48 40' fill='none' stroke='%23f5d27a' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='20' r='4' fill='%23f5d27a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --green-900:#123f36;
+  --green-700:#1f6f5c;
+  --green-500:#2f9077;
+  --green-100:#e6f2ee;
+  --gold:#c08a2e;
+  --gold-soft:#f7ecd6;
+  --ink:#1c2523;
+  --ink-2:#46564f;
+  --ink-3:#6d7d76;
+  --line:#dbe4df;
+  --bg:#fbfcfb;
+  --card:#ffffff;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 6px 20px rgba(18,63,54,.08);
+  --shadow-soft:0 2px 8px rgba(18,63,54,.06);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+  --space-1:6px;--space-2:12px;--space-3:18px;--space-4:26px;--space-5:38px;--space-6:56px;
+  --sticky-offset:118px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green-700);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0;color:var(--green-900)}
+p{margin:0 0 var(--space-2)}
+ul,ol{margin:0 0 var(--space-2);padding-left:1.2em}
+li{margin-bottom:6px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+
+/* 吸顶公告条 + 页头 */
+.sticky-zone{position:sticky;top:0;z-index:60}
+.announce{background:var(--green-900);color:#eaf4f0;font-size:13.5px;padding:7px 0}
+.announce .wrap{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+.announce b{color:#f5d27a;font-weight:600}
+.announce a{color:#f5d27a;text-decoration:underline}
+.topbar{background:rgba(251,252,251,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.header-inner{display:flex;align-items:center;gap:var(--space-3);min-height:66px;padding:8px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;color:var(--green-900);letter-spacing:.5px}
+.brand:hover{text-decoration:none}
+.brand svg{width:38px;height:38px;flex:none}
+.mainnav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+.mainnav a{padding:7px 11px;border-radius:8px;font-size:14.5px;color:var(--ink-2)}
+.mainnav a:hover,.mainnav a[aria-current="true"]{background:var(--green-100);color:var(--green-900);text-decoration:none}
+.head-actions{display:flex;gap:8px;align-items:center}
+.search-box{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 12px;background:#fff}
+.search-box input{border:0;outline:0;font:inherit;font-size:14px;width:132px;background:transparent;color:var(--ink)}
+.search-box button{border:0;background:var(--green-700);color:#fff;border-radius:999px;padding:5px 12px;font:inherit;font-size:13.5px;cursor:pointer}
+.search-box button:hover{background:var(--green-900)}
+.btn{display:inline-block;padding:9px 18px;border-radius:999px;font-size:14.5px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--green-700);color:#fff}
+.btn-primary:hover{background:var(--green-900)}
+.btn-ghost{background:#fff;border-color:var(--green-700);color:var(--green-700)}
+.btn-gold{background:var(--gold);color:#fff}
+.menu-toggle{display:none;background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:inherit;font-size:14px;cursor:pointer;color:var(--green-900)}
+.search-status{font-size:13px;color:var(--ink-3);padding:4px 0}
+.search-status[hidden]{display:none}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#eef7f3 0%,#fbfcfb 58%,#f8f1e3 100%)}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--space-5);align-items:center;padding:var(--space-6) 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--green-700);font-size:13px;padding:4px 12px;border-radius:999px;margin-bottom:14px}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block}
+.hero h1{font-size:clamp(28px,4vw,42px);letter-spacing:1px;margin-bottom:14px}
+.hero-lead{font-size:16.5px;color:var(--ink-2);max-width:34em}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--space-3)}
+.hero-stats{display:flex;gap:var(--space-4);margin-top:var(--space-4);flex-wrap:wrap}
+.hero-stats div{border-left:3px solid var(--gold);padding-left:12px}
+.hero-stats strong{display:block;font-size:22px;color:var(--green-900);line-height:1.2}
+.hero-stats span{font-size:13px;color:var(--ink-3)}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto}
+.hero-note{position:absolute;right:6px;bottom:-6px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12.5px;color:var(--ink-2);box-shadow:var(--shadow)}
+
+/* 通用板块 */
+section.block{padding:var(--space-5) 0}
+section.block + section.block{border-top:1px solid var(--line)}
+.block-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:var(--space-3)}
+.block-head h2{font-size:clamp(21px,2.4vw,26px)}
+.block-head p{color:var(--ink-3);font-size:14px;margin:0}
+.chip{display:inline-block;background:var(--green-100);color:var(--green-900);font-size:12.5px;padding:2px 10px;border-radius:999px;margin:0 6px 6px 0}
+.chip:hover{text-decoration:none;background:#d5e9e2}
+
+/* 布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--space-4);align-items:start}
+.side{position:sticky;top:calc(var(--sticky-offset) + 10px);display:grid;gap:var(--space-3)}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-3);box-shadow:var(--shadow-soft)}
+.side-card h2,.side-card h3{font-size:16px;margin-bottom:10px}
+.side-nav a{display:block;padding:6px 9px;border-radius:7px;font-size:14px;color:var(--ink-2);border-left:3px solid transparent}
+.side-nav a:hover{background:var(--green-100);text-decoration:none}
+.side-nav a.active{background:var(--green-100);color:var(--green-900);border-left-color:var(--gold);font-weight:600}
+
+/* 网格卡片 */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-3)}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-3);box-shadow:var(--shadow-soft);transition:transform .15s ease,box-shadow .15s ease;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card h3{font-size:16.5px;margin-bottom:8px}
+.card p{font-size:14.2px;color:var(--ink-2);margin-bottom:10px}
+.card .meta{margin-top:auto;font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap}
+.card img{border-radius:var(--radius-sm);margin-bottom:10px;width:100%;height:150px;object-fit:cover}
+.tagline{font-size:12.5px;color:var(--gold);font-weight:600;letter-spacing:.4px;margin-bottom:6px}
+
+/* 紧凑列表 */
+.list{list-style:none;padding:0;margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.list li{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);margin:0;align-items:baseline}
+.list li:last-child{border-bottom:0}
+.list time{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.list a{font-size:14.6px;font-weight:500}
+.list span{font-size:13px;color:var(--ink-3);display:block}
+
+/* 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:8px}
+.tag-index a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13.8px;color:var(--ink-2)}
+.tag-index a:hover{border-color:var(--green-500);color:var(--green-900);background:var(--green-100);text-decoration:none}
+
+/* 编号步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;display:grid;gap:12px}
+.steps li{counter-increment:step;position:relative;padding:14px 16px 14px 58px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin:0}
+.steps li::before{content:counter(step);position:absolute;left:16px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--green-700);color:#fff;font-size:14px;font-weight:700;display:grid;place-items:center}
+.steps strong{display:block;color:var(--green-900);margin-bottom:2px}
+.steps span{font-size:14px;color:var(--ink-2)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.compare>div{padding:var(--space-3)}
+.compare>div:first-child{border-right:1px solid var(--line);background:#fcfdfa}
+.compare h3{font-size:15.5px;margin-bottom:8px}
+.compare ul{margin:0;padding-left:1.1em;font-size:14px;color:var(--ink-2)}
+.compare .bad{color:#9c3b2e}
+
+/* 深度解析 */
+.article{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--space-4)}
+.article h2{font-size:clamp(21px,2.4vw,25px);margin-bottom:10px}
+.article h3{font-size:17px;margin:var(--space-3) 0 8px;padding-left:10px;border-left:4px solid var(--gold)}
+.article p{font-size:15.2px;color:var(--ink-2)}
+.article blockquote{margin:var(--space-3) 0;padding:12px 16px;background:var(--green-100);border-radius:var(--radius-sm);font-size:14.5px;color:var(--green-900)}
+.article blockquote p{margin:0;color:inherit}
+.article table{width:100%;border-collapse:collapse;font-size:14px;margin:var(--space-2) 0 var(--space-3)}
+.article th,.article td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.article th{background:var(--green-100);color:var(--green-900);font-weight:600}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:0 16px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600;font-size:15.2px;padding:13px 0;color:var(--green-900);list-style:none;position:relative;padding-right:30px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";position:absolute;right:0;top:12px;color:var(--gold);font-size:17px}
+.faq details[open] summary::after{content:"－"}
+.faq details p{font-size:14.4px;color:var(--ink-2);padding-bottom:12px;margin:0}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.comment{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.comment header{display:flex;gap:10px;align-items:baseline;margin-bottom:6px;flex-wrap:wrap}
+.comment b{font-size:14.5px;color:var(--green-900)}
+.comment time{font-size:12.5px;color:var(--ink-3)}
+.comment p{font-size:14.3px;margin:0;color:var(--ink-2)}
+.comment .stars{color:var(--gold);font-size:13px;letter-spacing:1px}
+.mood-neutral{color:var(--ink-3)}
+.mood-down{color:#9c3b2e}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.news-item{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--green-500);border-radius:var(--radius-sm);padding:13px 15px}
+.news-item time{font-size:12.5px;color:var(--ink-3)}
+.news-item h3{font-size:15.2px;margin:4px 0 6px}
+.news-item p{font-size:13.8px;color:var(--ink-2);margin:0}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);margin-left:8px}
+.timeline li{position:relative;padding:0 0 16px 20px;margin:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--green-500)}
+.timeline li:last-child::before{border-color:var(--gold)}
+.timeline time{font-size:12.5px;color:var(--ink-3);font-weight:600}
+.timeline p{font-size:14px;color:var(--ink-2);margin:2px 0 0}
+
+/* 引语卡 */
+.quote-card{background:linear-gradient(150deg,#123f36,#1f6f5c);color:#eaf4f0;border-radius:var(--radius);padding:var(--space-4);position:relative;overflow:hidden}
+.quote-card::before{content:"“";position:absolute;right:18px;top:-6px;font-size:96px;color:rgba(245,210,122,.22);line-height:1}
+.quote-card p{font-size:15.4px;margin-bottom:12px;color:#f2f8f5}
+.quote-card footer{font-size:13px;color:#f5d27a}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.rank li{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:10px 14px;margin:0}
+.rank .num{font-weight:800;color:var(--green-700);font-size:16px;text-align:center}
+.rank li:nth-child(-n+3) .num{color:var(--gold)}
+.rank b{font-size:14.6px;display:block;color:var(--green-900)}
+.rank span{font-size:13px;color:var(--ink-3)}
+.rank em{font-style:normal;font-size:13px;color:var(--green-700);font-weight:600;white-space:nowrap}
+
+.note{font-size:13.5px;color:var(--ink-3);background:var(--gold-soft);border-radius:var(--radius-sm);padding:10px 14px}
+
+/* 页脚 */
+footer.site{background:var(--green-900);color:#cfe1da;margin-top:var(--space-5);padding:var(--space-5) 0 var(--space-3)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--space-4)}
+footer.site h3{color:#fff;font-size:15px;margin-bottom:10px}
+footer.site a{color:#cfe1da;font-size:14px}
+footer.site a:hover{color:#f5d27a}
+footer.site ul{list-style:none;padding:0}
+footer.site li{margin-bottom:6px}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:18px;margin-bottom:10px}
+.foot-brand svg{width:34px;height:34px}
+.foot-pos{font-size:14px;color:#b7d1c7;max-width:26em}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:var(--space-4);padding-top:14px;font-size:12.8px;color:#9dbab0;display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+
+/* 回到顶部 */
+.totop{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--green-700);font-size:18px;cursor:pointer;box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;z-index:70}
+.totop.show{opacity:1;visibility:visible;transform:translateY(0)}
+
+/* 搜索无结果 / 隐藏 */
+.is-hidden{display:none !important}
+.search-empty{background:var(--gold-soft);border-radius:var(--radius-sm);padding:14px 16px;font-size:14px;color:#6b5320;margin-top:10px}
+.search-empty[hidden]{display:none}
+
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;grid-row:2}
+  .hero-inner{grid-template-columns:1fr;padding:var(--space-4) 0}
+  .hero-art{max-width:440px}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .mainnav{order:3;width:100%;display:none;margin-left:0;background:#fff;border-top:1px solid var(--line);padding:6px 0}
+  .mainnav.open{display:flex}
+  .menu-toggle{display:inline-block;margin-left:auto}
+  .head-actions{margin-left:0}
+  .search-box input{width:110px}
+}
+@media (max-width:640px){
+  .grid-3,.grid-2,.news-grid,.compare{grid-template-columns:1fr}
+  .compare>div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .hero-stats{gap:var(--space-3)}
+  .list li{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .head-actions{width:100%}
+  .search-box{flex:1}
+  .search-box input{width:100%}
+  .article{padding:var(--space-3)}
+  .wrap{width:calc(100% - 24px)}
+  :root{--sticky-offset:150px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<div class="sticky-zone">
+  <div class="announce">
+    <div class="wrap">
+      <span><b>优联福利平台</b> 11月8日更新：春节慰问品选品库开放预锁价，工会福利采购单笔满8万元可走“先审后付”。</span>
+      <a href="/#latest">查看更新清单</a>
+    </div>
+  </div>
+  <header class="topbar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/#top" aria-label="优联福利平台首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1f6f5c"/>
+          <path d="M14 41 L25 23 L33 36 L40 27 L50 41" fill="none" stroke="#f5d27a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="32" cy="18" r="4" fill="#f5d27a"/>
+        </svg>
+        <span>优联福利平台</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainnav" id="menuToggle">栏目菜单</button>
+      <nav class="mainnav" id="mainnav" aria-label="主题导航">
+        <a href="/#overview">福利体系总览</a>
+        <a href="/#budget">预算与积分</a>
+        <a href="/#gift">节日慰问品</a>
+        <a href="/#purchase">工会采购</a>
+        <a href="/#health">健康体检</a>
+        <a href="/#cases">企业案例</a>
+        <a href="/#latest">更新动态</a>
+      </nav>
+      <div class="head-actions">
+        <form class="search-box" role="search" id="searchForm">
+          <label class="sr-only" for="q">站内查找福利方案</label>
+          <input id="q" name="q" type="search" placeholder="找方案/礼包/规则" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+        <a class="btn btn-ghost" href="/#guide">领取指南</a>
+      </div>
+    </div>
+    <div class="wrap"><p class="search-status" id="searchStatus" role="status" hidden></p></div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow"><i></i>企业福利积分 · 节日慰问 · 工会采购</span>
+        <h1>优联福利平台</h1>
+        <p class="hero-lead">把年度福利预算拆成可核对的积分池与实物券池：员工在商城自选，行政在后台核销，工会按采购限额走审批。2026年春节档选品库已预锁价，供应商报价单与兑换记录可逐笔导出。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#overview">看福利体系总览</a>
+          <a class="btn btn-gold" href="/#budget">算一轮春节预算</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>1,286</strong><span>在售自选商品条码数</span></div>
+          <div><strong>47 家</strong><span>签约实物供应商</span></div>
+          <div><strong>11月8日</strong><span>春节选品预锁价截止</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 420 340" role="img" aria-label="福利积分池、实物券与审批流程的示意构图">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2f9077"/><stop offset="1" stop-color="#123f36"/>
+            </linearGradient>
+          </defs>
+          <rect x="16" y="24" width="248" height="176" rx="16" fill="url(#g1)"/>
+          <rect x="34" y="46" width="120" height="10" rx="5" fill="#f5d27a" opacity=".9"/>
+          <rect x="34" y="70" width="180" height="8" rx="4" fill="#eaf4f0" opacity=".55"/>
+          <rect x="34" y="88" width="150" height="8" rx="4" fill="#eaf4f0" opacity=".4"/>
+          <rect x="34" y="116" width="90" height="60" rx="10" fill="#eaf4f0" opacity=".18"/>
+          <rect x="134" y="116" width="90" height="60" rx="10" fill="#eaf4f0" opacity=".12"/>
+          <circle cx="72" cy="140" r="14" fill="#f5d27a"/>
+          <path d="M66 140 l5 6 l10 -12" stroke="#123f36" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M150 146 h58 M150 134 h40" stroke="#eaf4f0" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+          <rect x="210" y="196" width="194" height="120" rx="14" fill="#ffffff" stroke="#dbe4df"/>
+          <rect x="226" y="212" width="76" height="10" rx="5" fill="#1f6f5c"/>
+          <rect x="226" y="234" width="150" height="8" rx="4" fill="#dbe4df"/>
+          <rect x="226" y="252" width="128" height="8" rx="4" fill="#dbe4df"/>
+          <rect x="226" y="278" width="60" height="20" rx="10" fill="#f7ecd6"/>
+          <rect x="296" y="278" width="60" height="20" rx="10" fill="#e6f2ee"/>
+          <circle cx="386" cy="60" r="26" fill="#f7ecd6"/>
+          <path d="M376 60 h20 M386 50 v20" stroke="#c08a2e" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span class="hero-note">示例数据，仅作方案演示</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div>
+      <section class="block" id="overview">
+        <div class="block-head">
+          <h2>福利体系总览：四类预算池怎么分</h2>
+          <p>按发放形式与用途拆分，避免把节日慰问与日常关怀混在同一笔预算里</p>
+        </div>
+        <div class="grid-2">
+          <article class="card">
+            <p class="tagline">积分自选</p>
+            <h3>年度弹性福利积分</h3>
+            <p>按职级与司龄发放，员工在商城兑换生鲜、家电与虚拟卡券。积分当年清零，跨年结转需在12月31日前提交申请。</p>
+            <div class="meta"><span>人均 3,600 分</span><span>商城 1,286 条码</span></div>
+          </article>
+          <article class="card">
+            <p class="tagline">实物发放</p>
+            <h3>节日慰问品采购</h3>
+            <p>春节、中秋两档集中采购，按工会经费列支。2026年春节档预锁价在11月8日开放，12月5日前确认数量。</p>
+            <div class="meta"><span>春节档 SKU 82 个</span><span>含扶贫专区</span></div>
+          </article>
+          <article class="card">
+            <p class="tagline">专项保障</p>
+            <h3>健康体检与补充医疗</h3>
+            <p>体检套餐按年龄分三档，40岁以上增加肿瘤标志物筛查；补充医疗理赔材料由供应商按月汇总回传。</p>
+            <div class="meta"><span>三档套餐</span><span>签约体检机构 19 家</span></div>
+          </article>
+          <article class="card">
+            <p class="tagline">即时关怀</p>
+            <h3>婚育病丧慰问金</h3>
+            <p>凭证明材料走线上审批，3个工作日内发放至工资卡。金额按公司《员工关怀办法》第7条执行，不与节日慰问品重复。</p>
+            <div class="meta"><span>审批节点 2 个</span><span>材料清单 4 项</span></div>
+          </article>
+        </div>
+        <p class="note">四类池子的会计科目不同：积分计入职工福利费，工会慰问品走工会经费，体检费可税前列支。混用会在年度审计时被要求调整凭证。</p>
+      </section>
+
+      <section class="block" id="picked">
+        <div class="block-head">
+          <h2>精选内容推荐</h2>
+          <p>本周被企业行政反复打开的条目</p>
+        </div>
+        <div class="grid-3" data-searchable>
+          <article class="card" data-keywords="春节 慰问品 选品清单 工会">
+            <img src="https://picsum.photos/seed/ulian-giftbox/480/300" width="480" height="300" loading="lazy" alt="春节慰问品礼盒堆叠在企业仓库货架上" style="object-fit:cover">
+            <h3>2026年春节慰问品选品清单</h3>
+            <p>82 个 SKU 分坚果炒货、粮油、生鲜三组，其中扶贫专区 17 个。单份预算 280 元与 420 元两档，差异主要在生鲜冷链件数。</p>
+            <div class="meta"><span>更新 11月6日</span><span>清单可导出</span></div>
+          </article>
+          <article class="card" data-keywords="积分商城 兑换规则 清零">
+            <img src="https://picsum.photos/seed/ulian-points/480/300" width="480" height="300" loading="lazy" alt="员工在手机上查看福利积分商城兑换页面" style="object-fit:cover">
+            <h3>福利积分兑换规则说明</h3>
+            <p>积分抵扣上限为订单金额 100%，虚拟卡券不参与退款。12月31日 23:59 清零，未兑换部分转入下年度关怀基金。</p>
+            <div class="meta"><span>修订 11月2日</span><span>V3.2</span></div>
+          </article>
+          <article class="card" data-keywords="工会 采购 限额 审批 比价">
+            <img src="https://picsum.photos/seed/ulian-audit/480/300" width="480" height="300" loading="lazy" alt="工会采购审批单与比价表格放在办公桌上" style="object-fit:cover">
+            <h3>工会福利采购限额与比价流程</h3>
+            <p>单笔 5 万元以下询价三家，5 万至 20 万元须走公开比价并留 3 份报价单；8 万元以上可申请先审后付，账期 45 天。</p>
+            <div class="meta"><span>更新 11月8日</span><span>附模板</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="latest">
+        <div class="block-head">
+          <h2>最新更新</h2>
+          <p>11月1日至11月8日已核对上架的变更</p>
+        </div>
+        <ul class="list" data-searchable>
+          <li data-keywords="春节 预锁价 选品库">
+            <time datetime="2026-11-08">11月8日</time>
+            <div><a href="/#gift">春节选品库预锁价开放</a><span>锁定价格至12月20日，逾期按供应商当期报价执行</span></div>
+          </li>
+          <li data-keywords="积分 清零 规则 公告">
+            <time datetime="2026-11-07">11月7日</time>
+            <div><a href="/#budget">积分清零规则发布 V3.2 版</a><span>新增“未兑换转入关怀基金”条款，取消原跨年结转申请</span></div>
+          </li>
+          <li data-keywords="体检 套餐 加项">
+            <time datetime="2026-11-05">11月5日</time>
+            <div><a href="/#health">体检套餐加项价格下调</a><span>无痛胃肠镜加项由 1,180 元降至 980 元，限签约机构</span></div>
+          </li>
+          <li data-keywords="供应商 入驻 资质 审核">
+            <time datetime="2026-11-03">11月3日</time>
+            <div><a href="/#cases">实物供应商入驻资质审核清单更新</a><span>新增食品经营许可证与冷链运输温度记录两项材料</span></div>
+          </li>
+          <li data-keywords="发票 开具 电子发票 报销">
+            <time datetime="2026-11-01">11月1日</time>
+            <div><a href="/#purchase">电子发票开具口径统一</a><span>单笔订单只开一张合并发票，不再按品类拆分开具</span></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block" id="channels">
+        <div class="block-head">
+          <h2>分类入口</h2>
+          <p>按采购场景与发放对象找条目</p>
+        </div>
+        <div class="tag-index">
+          <a href="/#gift">春节慰问品选品</a>
+          <a href="/#gift">中秋慰问品清单</a>
+          <a href="/#budget">员工福利积分商城</a>
+          <a href="/#budget">积分兑换比例规则</a>
+          <a href="/#purchase">工会福利采购限额</a>
+          <a href="/#purchase">福利采购比价模板</a>
+          <a href="/#health">年度健康体检套餐</a>
+          <a href="/#cases">福利供应商比价表</a>
+          <a href="/#cases">企业福利预算测算</a>
+          <a href="/#guide">福利发放操作流程</a>
+          <a href="/#guide">新员工福利领取指南</a>
+          <a href="/#faq">节日慰问品合规问答</a>
+        </div>
+      </section>
+
+      <section class="block" id="deep">
+        <article class="article" id="analysis">
+          <h2>深度解析：积分自选和实物慰问，今年春节该怎么押注</h2>
+          <p>判断先放这里：员工规模超过 300 人、且春节前有异地分支机构的公司，2026年春节更适合把七成预算投给积分商城，三成做实物礼盒；300 人以下、集中办公的团队反向配置更划算。理由不在“员工喜欢自选”这种感受上，而在发放成本与错发率两组能算出来的数。</p>
+
+          <h3>发放成本：实物礼盒的隐性费用约占总价 18%</h3>
+          <p>以 420 元档春节礼盒为例，供应商报价含运费，但企业侧仍有几笔支出：仓库暂存按每立方米每天 1.8 元计，300 份礼盒约需 22 立方米，若提前 10 天到货，暂存费 396 元；异地邮寄每份 18 至 26 元，按 60 人异地计约 1,320 元；人事核对地址与追件平均每人 6 分钟，按 45 元每小时折算约 1,350 元。三项合计约 3,066 元，占 126,000 元货值的 2.4%。</p>
+          <p>但真正的差额来自错发与退换。某制造业客户 2025 年中秋发了 486 份生鲜礼盒，因冷链延误报废 31 份，补发成本 13,020 元，加上客服沟通工时，综合损耗率 6.9%。同一家公司 2026 年春节改用积分商城，员工自选、供应商直发，报废率降到 1.2%，但积分兑换的虚拟卡券占比升到 38%，人均实际感知价值下降约 40 元。</p>
+
+          <table>
+            <caption style="text-align:left;font-size:13px;color:var(--ink-3);padding-bottom:6px">两种发放形式在一个 480 人规模客户上的对比（示例数据）</caption>
+            <thead>
+              <tr><th>维度</th><th>实物春节礼盒</th><th>积分商城自选</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>人均预算</td><td>420 元</td><td>420 元（1:1 兑积分）</td></tr>
+              <tr><td>综合损耗</td><td>6.9%</td><td>1.2%</td></tr>
+              <tr><td>行政工时</td><td>约 48 小时</td><td>约 14 小时</td></tr>
+              <tr><td>感知价值</td><td>较高，仪式感强</td><td>分化，虚拟券拉低均值</td></tr>
+              <tr><td>票据处理</td><td>1 张发票 + 运单</td><td>按兑换明细合并开票</td></tr>
+            </tbody>
+          </table>
+
+          <h3>规则差异：2026年1月1日起工会经费列支口径变化</h3>
+          <p>财政部与全国总工会 2025 年联合发布的节日慰问品口径说明要求，工会经费购买的实物慰问品须“可追溯到具体商品与收货人”。这一条对积分商城的冲击比想象中大：虚拟卡券（话费、视频会员）在多数地方工会审计中不再被认定为“节日慰问品”，只能走职工福利费。某省会城市 2026 年 3 月的工会审计中，两家企业因把 12 万元视频会员卡列入工会慰问品被要求调账。</p>
+          <p>说法差异也出现在企业之间。行政口径普遍认为“积分也是实物的一种”，财务口径则坚持“积分是负债，兑换后才形成费用”。两种表述都能找到依据：前者参照《基层工会经费收支管理办法》中“可委托商业机构代发”的条款，后者参照企业会计准则第9号关于职工薪酬的确认时点。2026年11月2日平台规则 V3.2 的修订说明里，这条被写成“积分发放时不确认费用，兑换完成按月对账确认”，与财务口径一致。</p>
+          <blockquote><p>可核对的判断：如果企业春节预算中虚拟卡券占比打算超过 30%，先确认当地工会最近一次审计意见是否认可，再决定是否放进工会经费科目。这一步不做，后面补凭证的成本远高于省下的采购价。</p></blockquote>
+          <p>推测部分要说清楚：2027年春节前是否会把“可追溯”要求扩展到积分商城全部品类，目前没有公开文件。能观察到的信号只有两个——11月3日平台更新的供应商资质清单新增了冷链温度记录，以及11月7日积分规则把“兑换明细”列为对账必附材料。这两处变化的方向一致，但不足以当作政策依据。</p>
+
+          <h3>一个可套用的决策表</h3>
+          <p>把下面四项各打 0 或 1 分，总分 3 分及以上选积分为主，2 分及以下选实物为主。四项分别是：异地员工占比是否超过 20%；是否有专人能在春节前两周处理退换件；工会经费是否占春节预算一半以上；员工平均司龄是否低于 3 年。前两项指向发放成本，第三项指向合规风险，第四项指向感知价值——司龄短的人对实物礼盒的新鲜感更高，这一点在 2025 年中秋的两组客户回访中差异明显，司龄 3 年以下组对实物礼盒满意度 4.4 分（5 分制），积分组 3.9 分。</p>
+        </article>
+      </section>
+
+      <section class="block" id="guide">
+        <div class="block-head">
+          <h2>体验指南：从立项到签收的五步</h2>
+          <p>以春节慰问品为例，节点时间是 2026 年实际排期</p>
+        </div>
+        <ol class="steps">
+          <li><strong>11月8日—11月20日 定预算与人数</strong><span>确认在册人数与异地名单，按 280 元或 420 元档锁定总额；同步确认工会经费与职工福利费的分摊比例。</span></li>
+          <li><strong>11月21日—12月5日 选品与锁价</strong><span>在选品库勾选 SKU，扶贫专区至少占一件；提交后价格锁定至12月20日，逾期重报。</span></li>
+          <li><strong>12月6日—12月15日 比价与审批</strong><span>5 万元以上走三家比价，报价单留档；8 万元以上可申请先审后付，账期 45 天。</span></li>
+          <li><strong>12月16日—1月10日 发货与签收</strong><span>集中办公地址统一配送，异地员工由供应商直发；签收后 48 小时内在后台确认，逾期视为妥投。</span></li>
+          <li><strong>1月11日—1月31日 对账与归档</strong><span>按兑换明细合并开票，发票、比价单、签收记录三件套归档，留存不少于 5 年。</span></li>
+        </ol>
+      </section>
+
+      <section class="block" id="budget">
+        <div class="block-head">
+          <h2>预算与积分：两种口径对照</h2>
+          <p>同一笔钱放在不同科目，审批路径与票据要求不同</p>
+        </div>
+        <div class="compare">
+          <div>
+            <h3>工会经费列支</h3>
+            <ul>
+              <li>适用：春节、中秋实物慰问品</li>
+              <li>上限：按当地总工会年度限额执行</li>
+              <li>票据：增值税普通发票 + 发放签收表</li>
+              <li>限制：虚拟卡券一般不认可</li>
+              <li>审批：工会主席签批，必要时会员代表大会审议</li>
+            </ul>
+          </div>
+          <div>
+            <h3>职工福利费列支</h3>
+            <ul>
+              <li>适用：积分商城、体检、日常关怀</li>
+              <li>上限：工资薪金总额 14% 以内税前扣除</li>
+              <li>票据：按兑换明细合并开票</li>
+              <li>限制：<span class="bad">需与工资表分账管理</span></li>
+              <li>审批：财务负责人 + 分管副总</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">11月7日发布的积分规则 V3.2 明确：积分发放当月不确认费用，兑换完成后按月对账确认。这一条改变了 2025 年的做法，预算表上的“已发放积分”不再等于“已发生费用”。</p>
+      </section>
+
+      <section class="block" id="health">
+        <div class="block-head">
+          <h2>健康体检：三档套餐的加项差异</h2>
+          <p>19 家签约机构统一报价，加项按需勾选</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <h3>基础档（30岁以下）</h3>
+            <p>血常规、肝肾功能、胸片、腹部彩超。加项推荐幽门螺杆菌呼气试验，98 元。</p>
+            <div class="meta"><span>1,080 元/人</span></div>
+          </article>
+          <article class="card">
+            <h3>标准档（30—40岁）</h3>
+            <p>在基础档上加甲状腺彩超、颈动脉超声、肿瘤标志物三项。加项推荐无痛胃肠镜，980 元。</p>
+            <div class="meta"><span>1,680 元/人</span></div>
+          </article>
+          <article class="card">
+            <h3>加强档（40岁以上）</h3>
+            <p>含标准档全部项目，增加低剂量螺旋 CT 与心脏彩超。加项推荐骨密度检测，150 元。</p>
+            <div class="meta"><span>2,450 元/人</span></div>
+          </article>
+        </div>
+        <p class="note">11月5日起无痛胃肠镜加项由 1,180 元降至 980 元，仅限签约机构；非签约机构不享受该价格，报销时按原价核定。</p>
+      </section>
+
+      <section class="block" id="cases">
+        <div class="block-head">
+          <h2>企业案例与供应商榜单</h2>
+          <p>按 2026 年合作企业的复购与验收数据排序</p>
+        </div>
+        <ol class="rank">
+          <li><span class="num">1</span><div><b>华东某汽车零部件企业</b><span>480 人，春节改积分自选，损耗率由 6.9% 降至 1.2%</span></div><em>复购 3 年</em></li>
+          <li><span class="num">2</span><div><b>某省会城市农商行</b><span>1,120 人，工会经费与福利费分账，审计零调整</span></div><em>复购 2 年</em></li>
+          <li><span class="num">3</span><div><b>西南某建筑设计院</b><span>260 人，中秋实物礼盒 + 春节积分组合</span></div><em>复购 2 年</em></li>
+          <li><span class="num">4</span><div><b>某跨境电商公司</b><span>90 人，异地占比 45%，全积分方案</span></div><em>首年合作</em></li>
+        </ol>
+        <div class="quote-card" style="margin-top:var(--space-3)">
+          <p>“2025 年中秋生鲜礼盒报废 31 份，补发花了 1.3 万元。今年春节改成积分商城，行政从 48 小时工时降到 14 小时，唯一的问题是虚拟卡券拉低了人均感知价值。”</p>
+          <footer>——华东某汽车零部件企业 行政经理，2026年11月4日回访记录</footer>
+        </div>
+      </section>
+
+      <section class="block" id="purchase">
+        <div class="block-head">
+          <h2>工会采购：比价模板与限额</h2>
+          <p>按金额区间准备材料，少一件都可能被退回</p>
+        </div>
+        <ul class="list">
+          <li><time>5 万元以下</time><div><span>询价三家，留存报价截图或邮件，附选品理由说明</span></div></li>
+          <li><time>5 万—20 万元</time><div><span>公开比价，3 份正式报价单，评审记录须有 3 人以上签字</span></div></li>
+          <li><time>20 万—50 万元</time><div><span>增加供应商资质复核，食品类须提供食品经营许可证与检测报告</span></div></li>
+          <li><time>50 万元以上</time><div><span>走招标或竞争性磋商，合同须经法务审核，付款节点不少于两次</span></div></li>
+        </ul>
+        <p class="note">8 万元以上可申请“先审后付”，账期 45 天，需在发货前完成审批。11月8日公告的预锁价不改变限额要求，只是把价格固定到12月20日。</p>
+      </section>
+
+      <section class="block" id="faq">
+        <div class="block-head">
+          <h2>常见问题</h2>
+          <p>节日慰问品合规与积分使用两类高频疑问</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>工会经费买的春节慰问品，可以发视频会员卡吗？</summary>
+            <p>多数地方工会的审计口径不认可虚拟卡券作为节日慰问品。2026年1月1日起执行的口径说明要求实物慰问品可追溯到具体商品与收货人，视频会员卡缺少实物形态，通常只能走职工福利费。建议先查当地总工会最近一次审计意见。</p>
+          </details>
+          <details>
+            <summary>福利积分当年没用完，能转到下一年吗？</summary>
+            <p>2026年11月7日发布的规则 V3.2 取消了跨年结转申请，12月31日 23:59 未兑换积分转入下年度关怀基金，不再回到个人账户。此前 V3.1 允许申请结转一次，这是两版规则的主要差异。</p>
+          </details>
+          <details>
+            <summary>春节礼盒提前到货，仓库暂存费谁承担？</summary>
+            <p>供应商报价通常不含暂存。按每立方米每天 1.8 元计，300 份礼盒约 22 立方米，提前 10 天到货产生 396 元暂存费，由采购方承担。可在合同中约定到货窗口，缩短暂存时间。</p>
+          </details>
+          <details>
+            <summary>异地员工的慰问品怎么发，运费算谁的？</summary>
+            <p>供应商直发异地员工，单份运费 18 至 26 元，多数合同约定由采购方承担或计入单价。60 人异地约增加 1,320 元。若异地占比超过 20%，改积分商城的综合成本更低。</p>
+          </details>
+          <details>
+            <summary>体检加项能不能用积分抵扣？</summary>
+            <p>不能。体检属于职工福利费中的集体福利，按人头结算，与个人积分账户分开。积分商城目前只覆盖实物与虚拟卡券，不含医疗服务类项目。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="block" id="reviews">
+        <div class="block-head">
+          <h2>用户评论</h2>
+          <p>来自 2026 年 10 月至 11 月的合作企业回访与公开留言</p>
+        </div>
+        <div class="comments">
+          <article class="comment">
+            <header><b>行政-Lin</b><time datetime="2026-11-06">11月6日</time><span class="stars">★★★★★</span></header>
+            <p>春节选品库的预锁价确实省事，82 个 SKU 里有 17 个扶贫专区，工会那边要的“助农产品占比不低于 10%”直接满足。就是生鲜件的冷链件数写得不清楚，问了两轮才确认。</p>
+          </article>
+          <article class="comment">
+            <header><b>财务老周</b><time datetime="2026-11-05">11月5日</time><span class="stars">★★★☆☆</span></header>
+            <p>积分发放不确认费用这条改得对，跟准则一致。但兑换明细按月对账，我们 1,100 人的量，财务要核到每个员工，工作量比原来大。希望导出模板能直接对接工资系统。</p>
+          </article>
+          <article class="comment">
+            <header><b>匿名-制造业HR</b><time datetime="2026-11-03">11月3日</time><span class="stars">★★☆☆☆</span></header>
+            <p>去年中秋的生鲜礼盒报废了 31 份，补发沟通了半个月。今年积分商城的虚拟卡券占比太高，员工吐槽“发了个视频会员”，这个体验落差得提前跟员工说明。</p>
+          </article>
+          <article class="comment">
+            <header><b>工会-陈姐</b><time datetime="2026-11-02">11月2日</time><span class="stars">★★★★☆</span></header>
+            <p>比价模板好用，5 万元以下询价三家，截图留档就行。8 万元以上先审后付的 45 天账期对我们现金流友好，但审批节点多了一个，走完要一周。</p>
+          </article>
+          <article class="comment">
+            <header><b>新员工-小何</b><time datetime="2026-10-30">10月30日</time><span class="stars">★★★☆☆</span></header>
+            <p>入职第二个月才知道有 3,600 积分，没人通知。兑换规则里“当年清零”写在第三页，差点错过。希望新员工入职时能收到一条提醒。</p>
+          </article>
+          <article class="comment">
+            <header><b>行政-王工</b><time datetime="2026-10-28">10月28日</time><span class="stars">★★★★☆</span></header>
+            <p>体检加项降价到 980 元后，40 岁以上员工的胃肠镜预约排到了 12 月中。价格是好事，但签约机构的号源跟不上，这点要提前排期。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="news">
+        <div class="block-head">
+          <h2>相关资讯</h2>
+          <p>政策口径、供应商动态与行业节点</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-item">
+            <time datetime="2026-11-08">11月8日</time>
+            <h3>春节选品预锁价开放，逾期按当期报价</h3>
+            <p>选品库 82 个 SKU 锁定价格至12月20日，12月5日前须确认数量。逾期未确认的订单按供应商当期报价执行。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-11-05">11月5日</time>
+            <h3>体检加项价格调整，胃肠镜降至 980 元</h3>
+            <p>无痛胃肠镜加项由 1,180 元降至 980 元，限 19 家签约机构。非签约机构按原价核定，报销差额由个人承担。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-11-03">11月3日</time>
+            <h3>供应商资质清单新增冷链温度记录</h3>
+            <p>食品类供应商入驻须提供食品经营许可证与冷链运输温度记录两项材料，已在库供应商须在12月31日前补齐。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-11-01">11月1日</time>
+            <h3>电子发票开具口径统一为合并开票</h3>
+            <p>单笔订单只开一张合并发票，不再按品类拆分。已拆分的发票需在11月30日前重新开具，否则影响对账。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="related">
+        <div class="block-head">
+          <h2>相关推荐</h2>
+          <p>按当前浏览条目关联</p>
+        </div>
+        <div class="tag-index">
+          <a href="/#gift">扶贫专区农产品礼盒</a>
+          <a href="/#gift">280元春节慰问品方案</a>
+          <a href="/#gift">420元春节慰问品方案</a>
+          <a href="/#budget">积分商城兑换比例</a>
+          <a href="/#purchase">工会采购比价模板下载</a>
+          <a href="/#purchase">先审后付申请流程</a>
+          <a href="/#health">40岁以上体检套餐</a>
+          <a href="/#cases">华东制造业福利案例</a>
+          <a href="/#guide">新员工福利领取指南</a>
+          <a href="/#faq">虚拟卡券合规问答</a>
+        </div>
+      </section>
+
+      <section class="block" id="timeline">
+        <div class="block-head">
+          <h2>关键词时间线：2026年春节档关键节点</h2>
+          <p>从锁价到归档，按可核对日期排列</p>
+        </div>
+        <ul class="timeline">
+          <li><time datetime="2026-11-08">11月8日</time><p>春节选品库预锁价开放，价格锁定至12月20日。</p></li>
+          <li><time datetime="2026-11-20">11月20日</time><p>企业确认在册人数与异地名单，锁定预算总额。</p></li>
+          <li><time datetime="2026-12-05">12月5日</time><p>数量确认截止，逾期按供应商当期报价执行。</p></li>
+          <li><time datetime="2026-12-15">12月15日</time><p>三家比价与审批完成，8 万元以上申请先审后付。</p></li>
+          <li><time datetime="2027-01-10">1月10日</time><p>发货与签收完成，异地员工由供应商直发。</p></li>
+          <li><time datetime="2027-01-31">1月31日</time><p>对账与归档，发票、比价单、签收记录三件套留存。</p></li>
+        </ul>
+      </section>
+    </div>
+
+    <aside class="side" aria-label="侧栏导航与提示">
+      <div class="side-card">
+        <h2>栏目导航</h2>
+        <nav class="side-nav" id="sideNav" aria-label="侧栏栏目导航">
+          <a href="/#overview">福利体系总览</a>
+          <a href="/#picked">精选内容推荐</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#channels">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#budget">预算与积分</a>
+          <a href="/#health">健康体检</a>
+          <a href="/#cases">企业案例</a>
+          <a href="/#purchase">工会采购</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#reviews">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#related">相关推荐</a>
+          <a href="/#timeline">关键词时间线</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <h3>本月可核对数字</h3>
+        <ul style="padding-left:1.1em;font-size:14px;color:var(--ink-2)">
+          <li>春节选品 SKU：82 个</li>
+          <li>扶贫专区：17 个</li>
+          <li>实物供应商：47 家</li>
+          <li>签约体检机构：19 家</li>
+          <li>预锁价截止：12月20日</li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>示例数据说明</h3>
+        <p style="font-size:13.5px;color:var(--ink-3);margin:0">本页企业名称、人数、金额与回访记录均为演示用示例，不对应真实机构。规则条款引用自公开口径说明与平台修订记录，具体执行以企业所在地工会与财务制度为准。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2f9077"/>
+            <path d="M14 41 L25 23 L33 36 L40 27 L50 41" fill="none" stroke="#f5d27a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="18" r="4" fill="#f5d27a"/>
+          </svg>
+          <span>优联福利平台</span>
+        </div>
+        <p class="foot-pos">把年度福利拆成积分池、实物券池与专项保障三本账，每笔发放都可追溯到商品、收货人与审批单。</p>
+      </div>
+      <div>
+        <h3>福利方案</h3>
+        <ul>
+          <li><a href="/#overview">四类预算池拆分</a></li>
+          <li><a href="/#gift">春节慰问品选品</a></li>
+          <li><a href="/#budget">积分兑换规则</a></li>
+          <li><a href="/#health">三档体检套餐</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>采购与合规</h3>
+        <ul>
+          <li><a href="/#purchase">工会采购限额</a></li>
+          <li><a href="/#purchase">比价模板与审批</a></li>
+          <li><a href="/#faq">虚拟卡券合规问答</a></li>
+          <li><a href="/#news">政策口径更新</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>服务入口</h3>
+        <ul>
+          <li><a href="/#guide">五步发放指南</a></li>
+          <li><a href="/#cases">企业案例榜单</a></li>
+          <li><a href="/#reviews">合作企业评论</a></li>
+          <li><a href="/#timeline">春节档时间线</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 优联福利平台 · 示例站点，数据仅作方案演示</span>
+      <span>页面更新时间：2026年11月8日（对应“春节选品库预锁价开放”与“积分规则 V3.2”）</span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainnav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.closest('a') && window.matchMedia('(max-width:980px)').matches){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a, .mainnav a'));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href').replace('/#','#')); }).filter(Boolean);
+  var seen = {};
+  sections = sections.filter(function(s){ if(seen[s.id]) return false; seen[s.id] = true; return true; });
+  function onScroll(){
+    var pos = window.scrollY + 170, current = null;
+    sections.forEach(function(s){ if(s.offsetTop <= pos) current = s.id; });
+    links.forEach(function(a){
+      var target = a.getAttribute('href').replace('/#','');
+      if(target === current){ a.classList.add('active'); a.setAttribute('aria-current','true'); }
+      else { a.classList.remove('active'); a.removeAttribute('aria-current'); }
+    });
+    var btn = document.getElementById('toTop');
+    if(btn){ btn.classList.toggle('show', window.scrollY > 500); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  var toTop = document.getElementById('toTop');
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var status = document.getElementById('searchStatus');
+  function clearMarks(){
+    document.querySelectorAll('[data-searchable] .card, [data-searchable] > li').forEach(function(el){ el.classList.remove('is-hidden'); });
+    var old = document.getElementById('searchEmpty');
+    if(old) old.remove();
+  }
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var kw = (input.value || '').trim().toLowerCase();
+      clearMarks();
+      if(!kw){
+        status.hidden = true;
+        status.textContent = '';
+        return;
+      }
+      var items = document.querySelectorAll('[data-searchable] .card, [data-searchable] > li');
+      var hit = 0;
+      items.forEach(function(el){
+        var text = (el.textContent + ' ' + (el.getAttribute('data-keywords')||'')).toLowerCase();
+        if(text.indexOf(kw) > -1){ el.classList.remove('is-hidden'); hit++; }
+        else { el.classList.add('is-hidden'); }
+      });
+      status.hidden = false;
+      status.textContent = '“' + input.value.trim() + '”匹配到 ' + hit + ' 条内容。';
+      if(hit === 0){
+        var box = document.createElement('div');
+        box.id = 'searchEmpty';
+        box.className = 'search-empty';
+        box.textContent = '没有找到匹配条目。可以换一个更短的关键词，例如“春节”“积分”“比价”“体检”。';
+        var anchor = document.getElementById('picked');
+        if(anchor) anchor.after(box);
+      }
+    });
+    input.addEventListener('input', function(){
+      if(input.value.trim() === ''){ clearMarks(); status.hidden = true; status.textContent = ''; }
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "优联福利平台",
+  "description": "企业员工福利积分、节日慰问品、工会福利采购与健康体检方案的示例站点。",
+  "inLanguage": "zh-CN",
+  "about": "员工福利积分与节日慰问品采购"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "工会经费买的春节慰问品，可以发视频会员卡吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数地方工会的审计口径不认可虚拟卡券作为节日慰问品。2026年1月1日起执行的口径说明要求实物慰问品可追溯到具体商品与收货人，视频会员卡缺少实物形态，通常只能走职工福利费。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "福利积分当年没用完，能转到下一年吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026年11月7日发布的规则 V3.2 取消了跨年结转申请，12月31日 23:59 未兑换积分转入下年度关怀基金，不再回到个人账户。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "春节礼盒提前到货，仓库暂存费谁承担？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "供应商报价通常不含暂存。按每立方米每天 1.8 元计，300 份礼盒约 22 立方米，提前 10 天到货产生 396 元暂存费，由采购方承担。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "异地员工的慰问品怎么发，运费算谁的？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "供应商直发异地员工，单份运费 18 至 26 元，多数合同约定由采购方承担或计入单价。60 人异地约增加 1,320 元。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "体检加项能不能用积分抵扣？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不能。体检属于职工福利费中的集体福利，按人头结算，与个人积分账户分开。积分商城目前只覆盖实物与虚拟卡券，不含医疗服务类项目。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+  </html>
